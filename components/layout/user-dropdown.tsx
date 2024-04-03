@@ -54,7 +54,7 @@ export default function UserDropdown({ session }: { session: Session }) {
         >
           <Image
             alt={email}
-            src={image}
+            src={image || `https://api.dicebear.com/8.x/fun-emoji/svg`}
             width={40}
             height={40}
           />
