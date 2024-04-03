@@ -7,10 +7,10 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
+  title: "LeadShark - Generate Leads like Magic",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-  metadataBase: new URL("https://precedent.dev"),
+    "LeadShark | Automate Lead Generation with our Browser Extension",
+  metadataBase: new URL("https://www.leadshark.io"),
   themeColor: "#FFF",
 };
 
