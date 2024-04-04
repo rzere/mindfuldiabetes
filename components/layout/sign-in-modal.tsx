@@ -28,7 +28,7 @@ const SignInModal = ({
               src="/logo.png"
               alt="Logo"
               className="h-10 w-10"
-              width={40}
+              width={60}
               height={30}
             />
           </a>
