@@ -7,10 +7,10 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "LeadShark - Generate Leads like Magic",
+  title: "Mindful Diabetes AI",
   description:
-    "LeadShark | Automate Lead Generation with our Browser Extension",
-  metadataBase: new URL("https://www.leadshark.io"),
+    "Your mindful diabetes companion.",
+  metadataBase: new URL("https://www.mindfuldiabetes.ai"),
   themeColor: "#FFF",
 };
 
