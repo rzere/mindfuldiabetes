@@ -2,17 +2,15 @@
 
 ### To deploy your own version --- See example below:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=ai-sdk-example):
+Deploy the Next.js & Perplexity example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=ai-sdk-example):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai%2Ftree%2Fmain%2Fexamples%2Fnext-perplexity&env=PERPLEXITY_API_KEY&envDescription=Perplexity%20API%20Key&envLink=https%3A%2F%2Fapp.perplexity.ai%2Faccount%2Fapi-keys&project-name=vercel-ai-chat-perplexity&repository-name=vercel-ai-chat-perplexity)
 
-<a href="https://precedent.dev">
-  <img alt="Precedent – Building blocks for your Next project" src="https://precedent.dev/opengraph-image">
-  <h1 align="center">Precedent</h1>
+  <h3 align="center">Precedent</h1>
 </a>
 
 <p align="center">
-  Building blocks for your Next project
+  Building blocks for the Next project
 </p>
 
 <p align="center">
