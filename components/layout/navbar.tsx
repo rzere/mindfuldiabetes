@@ -30,7 +30,7 @@ export default function NavBar({ session }: { session: Session | null }) {
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>LeadShark</p>
+            <p>Mindful Diabetes AI</p>
           </Link>
           <div>
             {session ? (
