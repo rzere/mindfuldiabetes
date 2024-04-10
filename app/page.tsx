@@ -54,7 +54,7 @@ export default async function Home() {
         >
           <a
             className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
-            href={DEPLOY_URL}
+            href="https://mindfuldiabetes.org"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -75,7 +75,7 @@ export default async function Home() {
           >
             <Github />
             <p>
-              <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
+              <span className="hidden sm:inline-block">View on</span> GitHub{" "}
               <span className="font-semibold">{nFormatter(stars)}</span>
             </p>
           </a>
