@@ -1,8 +1,16 @@
 import { Github } from "@/components/shared/icons";
+import { useSession } from 'next-auth/react';
 import Chatbot from '../components/Chatbot';
 
+const { data: session, status } = useSession();
+
 export default function Home() {
-  return (
+  if(status=="authenticated") return(
+    <div>
+    {session && <Chatbot />}
+</div>
+    )
+    return(
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <a
@@ -52,9 +60,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div>
-  <Chatbot />
-</div>
     </>
   );
 }
