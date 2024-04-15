@@ -41,9 +41,9 @@ return(
             width={40}
             height={40}
           /> */}
-        <form onSubmit={handleSubmit} className="flex rounded-full">
+        <form onSubmit={handleSubmit} className="flex">
             <input
-            className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center"
+            className="container rounded-full mx-auto px-4 py-8 flex-grow flex items-center justify-center"
             value={input}
             placeholder="Press Enter to Submit"
             onChange={handleInputChange}

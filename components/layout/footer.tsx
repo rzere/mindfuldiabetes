@@ -7,11 +7,11 @@ export default function Footer() {
         A project by{" "}
         <a
           className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
-          href="https://twitter.com/ruzventure"
+          href="https://stoic.ist"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @ruzventure
+          Stoic.
         </a>
       </p>
     </div>
