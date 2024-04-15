@@ -1,8 +1,8 @@
 'use client';
 
-import { useSession, signIn, signOut } from 'next-auth/react';
+//import { useSession, signIn, signOut } from 'next-auth/react';
 import { useChat } from 'ai/react';
-import Link from 'next/link';
+//import Link from 'next/link';
 
 export default function Chat() {
 const { messages, input, handleInputChange, handleSubmit } = useChat();
