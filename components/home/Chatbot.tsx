@@ -11,6 +11,13 @@ if (!email) return null;
 
 return(
     <div className="container mx-auto px-4 py-8 flex-grow">
+    <div className="p-2">
+              {session?.user?.name && (
+                <p className="truncate text-sm font-medium text-gray-900">
+                  Hi, {session?.user?.name}!
+                </p>
+              )}
+            </div>
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex-grow">
         <div className="relative mt-2 rounded-md shadow-sm">
