@@ -35,13 +35,13 @@ return(
         
             </p>
         )}
-        <Image
+        {/* <Image
             alt="avatar"
             src={image || `https://www.svgrepo.com/show/428242/ship.svg`}
             width={40}
             height={40}
-          />
-        <form onSubmit={handleSubmit} className="flex">
+          /> */}
+        <form onSubmit={handleSubmit} className="flex rounded-full">
             <input
             className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center"
             value={input}
