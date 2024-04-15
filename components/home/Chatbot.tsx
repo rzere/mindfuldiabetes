@@ -20,7 +20,7 @@ return(
                 </p>
               )}
             </div>
-        <div className="relative mt-2 rounded-md shadow-sm">
+        <div className="relative mt-2 rounded-md">
         {messages.length > 0 ? (
             <div className="space-y-4 mb-4">
             {messages.map((m) => (
