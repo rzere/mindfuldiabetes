@@ -1,16 +1,15 @@
-import Card from "@/components/home/card";
-import { DEPLOY_URL } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
-import ComponentGrid from "@/components/home/component-grid";
-import Image from "next/image";
-import { nFormatter } from "@/lib/utils";
+import { Github } from "@/components/shared/icons";
+import React from 'react';
+import Chatbot from '../components/Chatbot';
 
 export default async function Home() {
 
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+      <div>
+      {<Chatbot />}
+    </div>
         <a
           href="https://mindfuldiabetes.org"
           target="_blank"
