@@ -43,13 +43,6 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg
-              className="h-4 w-4 group-hover:text-black"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-            </svg>
             <p>Visit our main page</p>
           </a>
           <a
