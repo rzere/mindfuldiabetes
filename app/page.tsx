@@ -1,13 +1,11 @@
 import { Github } from "@/components/shared/icons";
-import { useSession } from 'next-auth/react';
 import Chatbot from '../components/Chatbot';
 
 export default function Home() {
-  const { data: session } = useSession();
     return(
       <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        {session && <Chatbot />} {/* Conditionally render Chatbot based on session */}
+        <Chatbot />
       </div>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <a
