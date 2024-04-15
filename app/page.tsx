@@ -5,7 +5,7 @@ export default function Home(){
     return(
       <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-      {session && <Chatbot />}
+      <Chatbot />
       </div>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <a
