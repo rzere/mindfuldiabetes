@@ -1,3 +1,5 @@
+"use client";
+
 import { Github } from "@/components/shared/icons";
 import Chatbot from '../components/Chatbot';
 import { Session } from "next-auth";
