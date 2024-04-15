@@ -1,5 +1,6 @@
 import { Github } from "@/components/shared/icons";
-import React from 'react';
+import React, { JSXElementConstructor } from 'react';
+import dynamic from 'next/dynamic';
 import Chatbot from '../components/Chatbot';
 
 export default function Home() {
