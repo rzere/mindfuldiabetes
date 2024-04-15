@@ -1,5 +1,4 @@
-export const config = { runtime: 'client' };
-
+export const runtime = "client"
 import React, { useState } from 'react';
 import { useSession } from 'next-auth/react';
 

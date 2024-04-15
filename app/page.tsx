@@ -1,4 +1,4 @@
-export const config = { runtime: 'client' };
+export const runtime = "client"
 import { Github } from "@/components/shared/icons";
 import React from 'react';
 import Chatbot from '../components/Chatbot';
