@@ -1,8 +1,9 @@
 'use client';
 
 import { useChat } from 'ai/react';
+import { Session } from "next-auth";
 
-export default function Chat() {
+export default function Chat({ session }: { session: Session | null }) {
 const { messages, input, handleInputChange, handleSubmit } = useChat();
 return (
     <div className="container mx-auto px-4 py-8 flex-grow">

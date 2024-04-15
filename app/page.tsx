@@ -1,12 +1,9 @@
 import { Github } from "@/components/shared/icons";
-import Chatbot from '../components/Chatbot';
+import Chatbot from '../components/home/Chatbot';
 
 export default function Home(){
     return(
       <>
-      <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-      <Chatbot />
-      </div>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <a
           href="https://mindfuldiabetes.org"
