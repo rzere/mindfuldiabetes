@@ -1,5 +1,4 @@
 import { Github } from "@/components/shared/icons";
-import Chatbot from '../components/home/Chatbot';
 
 export default function Home(){
     return(
@@ -12,7 +11,7 @@ export default function Home(){
           className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
         >
           <p className="text-sm font-semibold text-[#1d9bf0]">
-            by Mindful Diabetes
+            A demo by Mindful Diabetes
           </p>
         </a>
         <h1
@@ -33,11 +32,11 @@ export default function Home(){
         >
           <a
             className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
-            href="https://mindfuldiabetes.org"
+            href="https://mindfuldiabetes.org/guide/#recent"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>Visit our main page</p>
+            <p>Learn more on our blog</p>
           </a>
           <a
             className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
