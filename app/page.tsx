@@ -1,10 +1,8 @@
 import { Github } from "@/components/shared/icons";
-import { Session } from "next-auth";
 import Chatbot from '../components/Chatbot';
 
-export default function Home({ session }: { session: Session }) {
-  const { email, image } = session?.user || {};
-  if (!email) return (
+export default function Home() {
+  return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <a
@@ -54,11 +52,9 @@ export default function Home({ session }: { session: Session }) {
           </a>
         </div>
       </div>
-    </>
-  );
-  return (
-  <div>
+      <div>
   <Chatbot />
 </div>
-  )
+    </>
+  );
 }
