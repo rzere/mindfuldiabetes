@@ -1,8 +1,6 @@
 import { Github } from "@/components/shared/icons";
 import React from 'react';
-import dynamic from 'next/dynamic';
-
-const Chatbot = dynamic(() => import('../components/Chatbot'), { ssr: false });
+import Chatbot from '../components/Chatbot';
 
 export default function Home() {
   return (

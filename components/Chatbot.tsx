@@ -1,3 +1,4 @@
+/* next.client */  // This marks the component as a client component
 import React, { useState } from 'react';
 import { useSession } from 'next-auth/react';
 
