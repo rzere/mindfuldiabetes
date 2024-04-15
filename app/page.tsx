@@ -1,16 +1,16 @@
-export const runtime = "client"
 import { Github } from "@/components/shared/icons";
 import React from 'react';
-import Chatbot from '../components/Chatbot';
+import dynamic from 'next/dynamic';
 
-export default async function Home() {
+const Chatbot = dynamic(() => import('../components/Chatbot'), { ssr: false });
 
+export default function Home() {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-      <div>
-      {<Chatbot />}
-    </div>
+        <div>
+          <Chatbot />
+        </div>
         <a
           href="https://mindfuldiabetes.org"
           target="_blank"
