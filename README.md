@@ -34,7 +34,7 @@ Deploy the Next.js & Perplexity example using [Vercel](https://vercel.com?utm_so
 
 Precedent is an opinionated collection of components, hooks, and utilities for your Next.js project.
 
-## One-click Deploy
+## One-click Deploy of the Landing Page
 
 You can deploy this template to Vercel with the button below:
 
