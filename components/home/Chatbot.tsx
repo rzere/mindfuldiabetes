@@ -1,11 +1,15 @@
 'use client';
 
+import Image from "next/image";
 import { useChat } from 'ai/react';
 import { Session } from "next-auth";
 
 export default function Chat({ session }: { session: Session | null }) {
 const { messages, input, handleInputChange, handleSubmit } = useChat();
-return (
+const { email, image } = session?.user || {};
+if (!email) return null;
+
+return(
     <div className="container mx-auto px-4 py-8 flex-grow">
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex-grow">
@@ -31,7 +35,12 @@ return (
         
             </p>
         )}
-
+        <Image
+            alt="avatar"
+            src={image || `https://www.svgrepo.com/show/428242/ship.svg`}
+            width={40}
+            height={40}
+          />
         <form onSubmit={handleSubmit} className="flex">
             <input
             className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center"
