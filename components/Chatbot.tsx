@@ -3,10 +3,16 @@
 import React, { useState } from 'react';
 import { useSession } from 'next-auth/react';
 
+type Message = {
+    sender: string;
+    content: string;
+  };
+
 const Chatbot = () => {
+  
   const { data: session } = useSession(); // Accessing the current session
   const [input, setInput] = useState('');
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<Message[]>([]); // Explicitly type the messages state
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
