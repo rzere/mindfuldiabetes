@@ -1,15 +1,12 @@
 import { Github } from "@/components/shared/icons";
-import React, { JSXElementConstructor } from 'react';
-import dynamic from 'next/dynamic';
+import { Session } from "next-auth";
 import Chatbot from '../components/Chatbot';
 
-export default function Home() {
-  return (
+export default function Home({ session }: { session: Session }) {
+  const { email, image } = session?.user || {};
+  if (!email) return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <div>
-          <Chatbot />
-        </div>
         <a
           href="https://mindfuldiabetes.org"
           target="_blank"
@@ -59,4 +56,9 @@ export default function Home() {
       </div>
     </>
   );
+  return (
+  <div>
+  <Chatbot />
+</div>
+  )
 }

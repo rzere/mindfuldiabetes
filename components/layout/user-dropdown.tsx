@@ -10,10 +10,6 @@ import { Session } from "next-auth";
 export default function UserDropdown({ session }: { session: Session }) {
   const { email, image } = session?.user || {};
   const [openPopover, setOpenPopover] = useState(false);
-  const [showChatbot, setShowChatbot] = useState(false);
-  const toggleChatbot = () => {
-    setShowChatbot(!showChatbot);
-  };
 
   if (!email) return null;
 
