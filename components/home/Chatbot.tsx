@@ -45,7 +45,7 @@ return(
             <input
             className="container rounded-full mx-auto px-4 py-8 flex-grow flex items-center justify-center"
             value={input}
-            placeholder="Press Enter to Submit"
+            placeholder="hit enter to submit your query"
             onChange={handleInputChange}
             />
         </form>
