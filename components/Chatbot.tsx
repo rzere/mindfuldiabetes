@@ -8,7 +8,7 @@ export default function Chat() {
 const { messages, input, handleInputChange, handleSubmit } = useChat();
 
 return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
+    <div className="container mx-auto px-4 py-8 flex-grow">
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex-grow">
         <div className="relative mt-2 rounded-md shadow-sm">

@@ -1,31 +1,32 @@
-// pages/api/chat.js
-import { Configuration, OpenAIApi } from "openai";
+// import OpenAI from 'openai';
+// import { OpenAIStream, StreamingTextResponse } from 'ai';
 
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const openai = new OpenAIApi(configuration);
+// // Create an OpenAI API client (that's edge friendly!)
+// // but configure it to point to perplexity.ai
+// const perplexity = new OpenAI({
+//   apiKey: process.env.PERPLEXITY_API_KEY || '',
+//   baseURL: 'https://api.perplexity.ai/',
+// });
 
-export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    const { message } = req.body;
+// // IMPORTANT! Set the runtime to edge
+// export const runtime = 'edge';
 
-    try {
-      const response = await openai.createChatCompletion({
-        model: "gpt-3.5-turbo",
-        messages: [
-          { role: "system", content: "You are a helpful assistant." },
-          { role: "user", content: message },
-        ],
-      });
+// export async function POST(req: Request) {
+//   // Extract the `messages` from the body of the request
+//   const { messages } = await req.json();
 
-      res.status(200).json(response.data);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Error processing your request' });
-    }
-  } else {
-    res.setHeader('Allow', ['POST']);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
-  }
-}
+//   // Ask Perplexity for a streaming chat completion using PPLX 70B online model
+//   // @see https://blog.perplexity.ai/blog/introducing-pplx-online-llms
+//   const response = await perplexity.chat.completions.create({
+//     model: 'mixtral-8x7b-instruct',
+//     stream: true,
+//     max_tokens: 10000,
+//     messages,
+//   });
+
+//   // Convert the response into a friendly text-stream.
+//   const stream = OpenAIStream(response);
+
+//   // Respond with the stream
+//   return new StreamingTextResponse(stream);
+// }
