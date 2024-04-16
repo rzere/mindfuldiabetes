@@ -2,15 +2,10 @@
 
 import Image from "next/image";
 import { useChat } from 'ai/react';
-//import { Session } from "next-auth";
-//import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 
-//export default function Chatbot({ session }: { session: Session | null }) {
 export default function Chatbot() {
-const jerriAvatarUrl = "https://raw.githubusercontent.com/rzere/mindfuldiabetes/main/public/jerri.jpeg";
 const { messages, input, handleInputChange, handleSubmit } = useChat();
-//const { email, name } = session?.user || {};
 const {
     user
 } = useKindeBrowserClient();
@@ -33,15 +28,15 @@ return (
                   {m.role === 'user' && user?.picture ? (
                     <Image
                       src={user.picture}
-                      alt="User avatar"
+                      alt="User Avatar"
                       width="30"
                       height="30"
                       className="mr-2 rounded-full"
                     />
                   ) : (
                     <Image
-                      src={jerriAvatarUrl}
-                      alt="Jerri avatar"
+                      src="/jerri.jpeg"
+                      alt="Jerri Avatar"
                       width="30"
                       height="30"
                       className="mr-2 rounded-full"
