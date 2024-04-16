@@ -34,7 +34,7 @@ return(
             {messages.map((m) => (
                 <div
                 key={m.id}
-                className={`p-4 rounded-lg ${
+                className={`p-4 rounded-lg text-gray-500 ${
                     m.role === 'user' ? 'bg-[#00a651] bg-opacity-20' : 'bg-gray-100'
                 }`}
                 >
