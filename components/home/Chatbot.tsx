@@ -16,7 +16,6 @@ const {
     user
 } = useKindeBrowserClient();
 if (user == null) return null;
-const { given_name } = {JSON.stringify(user.given_name, null, 2)};
 
 return(
     <div className="container mx-auto px-4 py-8 flex-grow">
