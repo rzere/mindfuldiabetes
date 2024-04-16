@@ -1,13 +1,20 @@
-'use client';
+//'use client';
 
 import Image from "next/image";
 import { useChat } from 'ai/react';
-import { Session } from "next-auth";
+//import { Session } from "next-auth";
+import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
 
-export default function Chat({ session }: { session: Session | null }) {
+//export default function Chat({ session }: { session: Session | null }) {
+export default async function Chat() {
+
+
 const { messages, input, handleInputChange, handleSubmit } = useChat();
-const { email, name } = session?.user || {};
-if (!email) return null;
+//const { email, name } = session?.user || {};
+const {
+    isAuthenticated
+} = getKindeServerSession();
+if (!isAuthenticated) return null;
 
 return(
     <div className="container mx-auto px-4 py-8 flex-grow">
