@@ -5,6 +5,6 @@ import {handleAuth} from "@kinde-oss/kinde-auth-nextjs/server";
 
 export default async function Chat() {
   //const session = await getServerSession(authOptions);
-  const session = await getServerSession(handleAuth);
-  return <Chatbot session={session} />;
+  //return <Chatbot session={session} />;
+  return <Chatbot/>;
 }

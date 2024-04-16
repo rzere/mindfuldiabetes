@@ -6,7 +6,7 @@ import { useChat } from 'ai/react';
 import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
 
 //export default function Chat({ session }: { session: Session | null }) {
-export default async function Chat() {
+export default function Chatbot() {
 
 
 const { messages, input, handleInputChange, handleSubmit } = useChat();
