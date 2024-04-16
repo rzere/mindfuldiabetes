@@ -72,9 +72,17 @@ if (user != null) return (
           <div>
           <button
                  className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
-                 onClick={() => setShowSignInModal(true)}
+                 //onClick={() => setShowSignInModal(true)}
+                 onClick={() => window.location.href = "https://www.mindfuldiabetes.ai/api/auth/login?"}
                >
-                 Sign In
+                 Log-in
+               </button>
+               <button
+                 className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                 //onClick={() => setShowSignInModal(true)}
+                 onClick={() => window.location.href = "https://www.mindfuldiabetes.ai/api/auth/register?"}
+               >
+                 Sign-up
                </button>
           {/* <LoginLink>Sign in</LoginLink>
           <RegisterLink>Sign up</RegisterLink> */}
