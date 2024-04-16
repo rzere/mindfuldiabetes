@@ -39,7 +39,10 @@ if (user != null) return (
               height={30}
             />
           </a>
-          <h3 className="font-display text-2xl font-bold">Sign In</h3>
+          <h3 className="font-display text-2xl font-bold">Log out of mdAI</h3>
+          <p className="text-sm text-gray-500">
+            Thank you for trying out mdAI!
+          </p>
         </div>
         <LogoutLink>Log out</LogoutLink>
         {/* <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 md:px-16">

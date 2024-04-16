@@ -38,7 +38,7 @@ return(
                     m.role === 'user' ? 'bg-[#00a651] bg-opacity-20' : 'bg-gray-100'
                 }`}
                 >
-                <span className="font-semibold">
+                <span className="font-semibold text-gray-500" >
                     {m.role === 'user' ? 'You: ' : 'JERRI: '}
                 </span>
                 <p className="whitespace-pre-wrap">{m.content}</p>
