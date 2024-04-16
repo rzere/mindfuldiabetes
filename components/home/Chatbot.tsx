@@ -30,9 +30,9 @@ return (
                     m.role === 'user' ? 'bg-blue-200 bg-opacity-20' : 'bg-orange-200 bg-opacity-20'
                   }`}
                 >
-                  {m.role === 'user' && user?.image ? (
+                  {m.role === 'user' && user?.picture ? (
                     <Image
-                      src={user.image}
+                      src={user.picture}
                       alt="User avatar"
                       width="30"
                       height="30"
