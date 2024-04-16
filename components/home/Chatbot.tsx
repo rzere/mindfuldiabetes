@@ -9,7 +9,7 @@ const { messages, input, handleInputChange, handleSubmit } = useChat();
 const {
     user
 } = useKindeBrowserClient();
-if (!user.subscriber) return null;
+if (user == null) return null;
 
 return (
     <div className="container mx-auto px-4 py-8 flex-grow">
