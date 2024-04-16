@@ -35,15 +35,22 @@ return(
                 <div
                 key={m.id}
                 className={`p-4 rounded-lg text-gray-500 ${
-                    m.role === 'user' ? 'bg-blue-100 bg-opacity-20' : 'bg-orange-200'
+                    m.role === 'user' ? 'bg-blue-200 bg-opacity-20' : 'bg-orange-200 bg-opacity-20'
                 }`}
                 >
-                {/* <pre className="p-4 rounded bg-slate-950 text-green-300">
-                    {JSON.stringify(user.given_name, null, 2)}
-                </pre> */}
+                <pre className="p-4 rounded bg-slate-950 text-green-300">
+                    {JSON.stringify(user, null, 2)}
+                </pre>
                 <span className="font-semibold text-[#1d9bf0]" >
                     {m.role === 'user' ? user.given_name + ':' : 'JERRI: '}
                 </span>
+                <Image
+              src="/logo.png"
+              alt="avatar"
+              width="30"
+              height="30"
+              className="mr-2 rounded-sm"
+            ></Image>
                 <p className="whitespace-pre-wrap">{m.content}</p>
                 </div>
             ))}
