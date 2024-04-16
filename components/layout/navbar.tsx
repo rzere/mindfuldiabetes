@@ -49,7 +49,6 @@ if (user != null) return (
       </div>
     </>
   );
-)
   return (
     <>
       <SignInModal />
