@@ -15,6 +15,7 @@ const { messages, input, handleInputChange, handleSubmit } = useChat();
 const {
     user
 } = useKindeBrowserClient();
+const userName = user?.name || 'You';
 if (user == null) return null;
 
 return(
@@ -39,7 +40,7 @@ return(
                 }`}
                 >
                 <span className="font-semibold text-orange-500" >
-                    {m.role === 'user' ? user : 'JERRI: '}
+                    {m.role === 'user' ? userName : 'JERRI: '}
                 </span>
                 <p className="whitespace-pre-wrap">{m.content}</p>
                 </div>
