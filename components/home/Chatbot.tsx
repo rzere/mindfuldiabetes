@@ -35,13 +35,13 @@ return(
                 <div
                 key={m.id}
                 className={`p-4 rounded-lg text-gray-500 ${
-                    m.role === 'user' ? 'bg-blue-100 bg-opacity-20' : 'bg-gray-100'
+                    m.role === 'user' ? 'bg-blue-100 bg-opacity-20' : 'bg-orange-200'
                 }`}
                 >
                 {/* <pre className="p-4 rounded bg-slate-950 text-green-300">
                     {JSON.stringify(user.given_name, null, 2)}
                 </pre> */}
-                <span className="font-semibold text-orange-500" >
+                <span className="font-semibold text-[#1d9bf0]" >
                     {m.role === 'user' ? user.given_name + ':' : 'JERRI: '}
                 </span>
                 <p className="whitespace-pre-wrap">{m.content}</p>
