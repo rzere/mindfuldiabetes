@@ -29,21 +29,21 @@ return (
                     <Image
                       src={user.picture}
                       alt="User Avatar"
-                      width="30"
-                      height="30"
+                      width="50"
+                      height="50"
                       className="mr-2 rounded-full"
                     />
                   ) : (
                     <Image
                       src="/jerri.jpeg"
                       alt="Jerri Avatar"
-                      width="30"
-                      height="30"
+                      width="50"
+                      height="50"
                       className="mr-2 rounded-full"
                     />
                   )}
                   <span className="font-semibold text-[#1d9bf0]">
-                    {m.role === 'user' ? user?.given_name + ':' : 'JERRI: '}
+                    {m.role === 'user' ? user?.given_name + ':' : 'JERRI [ai]:'}
                   </span>
                   <p className="whitespace-pre-wrap">{m.content}</p>
                 </div>
