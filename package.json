@@ -41,7 +41,8 @@
     "vaul": "^0.6.8",
     "openai": "4.16.1",
     "zod": "^3.0.0",
-    "@kinde-oss/kinde-auth-nextjs": "latest"
+    "@kinde-oss/kinde-auth-nextjs": "latest",
+    "@babel/core": "latest"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.6",

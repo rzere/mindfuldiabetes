@@ -1,5 +1,5 @@
 import Modal from "@/components/shared/modal";
-import { signIn } from "next-auth/react";
+//import { signIn } from "next-auth/react";
 import {
   useState,
   Dispatch,
@@ -7,8 +7,10 @@ import {
   useCallback,
   useMemo,
 } from "react";
-import { LoadingDots, Google } from "@/components/shared/icons";
+//import { LoadingDots, Google } from "@/components/shared/icons";
 import Image from "next/image";
+// added Kinde auth instead
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 const SignInModal = ({
   showSignInModal,
@@ -37,8 +39,9 @@ const SignInModal = ({
             Please log-in with your Google Account to access mdAI.
           </p>
         </div>
-
-        <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 md:px-16">
+        <LoginLink>Sign in</LoginLink>
+        <RegisterLink>Sign up</RegisterLink>
+        {/* <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 md:px-16">
           <button
             disabled={signInClicked}
             className={`${
@@ -60,7 +63,7 @@ const SignInModal = ({
               </>
             )}
           </button>
-        </div>
+        </div> */}
       </div>
     </Modal>
   );

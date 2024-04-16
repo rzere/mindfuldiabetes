@@ -36,14 +36,13 @@ export default function NavBar({ session }: { session: Session | null }) {
             {session ? (
               <UserDropdown session={session} />
             ) : (
-                  <LoginLink>Sign in</LoginLink>
-                  <RegisterLink>Sign up</RegisterLink>
-              // <button
-              //   className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
-              //   onClick={() => setShowSignInModal(true)}
-              // >
-              //   Sign In
-              // </button>
+             
+              <button
+                className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                onClick={() => setShowSignInModal(true)}
+              >
+                Sign In
+              </button>
             )}
           </div>
         </div>
