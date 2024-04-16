@@ -6,7 +6,7 @@ import useScroll from "@/lib/hooks/use-scroll";
 import { useSignInModal } from "./sign-in-modal";
 import UserDropdown from "./user-dropdown";
 //import { Session } from "next-auth";
-import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
+//import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default function NavBar() {
   const { SignInModal, setShowSignInModal } = useSignInModal();
@@ -26,15 +26,21 @@ export default function NavBar() {
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
               src="/logo.png"
-              alt="LeadShark logo"
+              alt="MD logo"
               width="30"
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
           </Link>
           <div>
-          <LoginLink>Sign in</LoginLink>
-          <RegisterLink>Sign up</RegisterLink>
+          <button
+                 className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                 onClick={() => setShowSignInModal(true)}
+               >
+                 Sign In
+               </button>
+          {/* <LoginLink>Sign in</LoginLink>
+          <RegisterLink>Sign up</RegisterLink> */}
           </div>
         </div>
       </div>

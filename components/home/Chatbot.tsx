@@ -39,7 +39,7 @@ return(
                 }`}
                 >
                 <span className="font-semibold">
-                    {m.role === 'user' ? 'You: ' : 'Mindful Diabetes AI: '}
+                    {m.role === 'user' ? 'You: ' : 'JERRI: '}
                 </span>
                 <p className="whitespace-pre-wrap">{m.content}</p>
                 </div>
