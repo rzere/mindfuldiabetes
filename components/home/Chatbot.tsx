@@ -20,13 +20,13 @@ return(
     <div className="container mx-auto px-4 py-8 flex-grow">
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex-grow">
-    <div className="p-2">
+    {/* <div className="p-2">
               {session?.user?.name && (
                 <p className="truncate text-sm font-medium text-gray-900">
                   Hi, {session?.user?.name.split(" ")[0]}!
                 </p>
               )}
-            </div>
+            </div> */}
         <div className="relative mt-2 rounded-md">
         {messages.length > 0 ? (
             <div className="space-y-4 mb-4">
