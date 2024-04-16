@@ -15,7 +15,6 @@ const { messages, input, handleInputChange, handleSubmit } = useChat();
 const {
     user
 } = useKindeBrowserClient();
-const userName = user?.name || 'You';
 if (user == null) return null;
 
 return(
@@ -39,8 +38,11 @@ return(
                     m.role === 'user' ? 'bg-[#00a651] bg-opacity-20' : 'bg-gray-100'
                 }`}
                 >
+                <pre className="p-4 rounded bg-slate-950 text-green-300">
+                    {JSON.stringify(user, null, 2)}
+                </pre>
                 <span className="font-semibold text-orange-500" >
-                    {m.role === 'user' ? userName : 'JERRI: '}
+                    {m.role === 'user' ? 'You' : 'JERRI: '}
                 </span>
                 <p className="whitespace-pre-wrap">{m.content}</p>
                 </div>
