@@ -39,7 +39,7 @@ return(
                 }`}
                 >
                 <pre className="p-4 rounded bg-slate-950 text-green-300">
-                    {JSON.stringify(user, null, 2)}
+                    {JSON.stringify(user.given_name, null, 2)}
                 </pre>
                 <span className="font-semibold text-orange-500" >
                     {m.role === 'user' ? 'You' : 'JERRI: '}
