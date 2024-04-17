@@ -83,7 +83,7 @@ export default function Home(){
         "#jointhecamino",
       demo: (
         <div className="flex items-center justify-center space-x-20">
-          <Image alt="Auth.js logo" src="/JOINTHECAMINOGIF-Squared.gif" width={250} height={250} />
+          <Image alt="Auth.js logo" src="/JOINTHECAMINOGIF-Squared.gif" width={186} height={186} />
         </div>
       ),
     },
