@@ -2,7 +2,7 @@
 import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
-export const alt = "LeadShark - Generate Leads like Magic";
+export const alt = "Mindful Diabetes Inc";
 export const contentType = "image/png";
 
 export default async function OG() {
