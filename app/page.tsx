@@ -1,4 +1,9 @@
+import Card from "@/components/home/card";
+import { DEPLOY_URL } from "@/lib/constants";
 import { Github } from "@/components/shared/icons";
+import WebVitals from "@/components/home/web-vitals";
+import ComponentGrid from "@/components/home/component-grid";
+import Image from "next/image";
 
 export default function Home(){
     return(
@@ -52,5 +57,18 @@ export default function Home(){
         </div>
       </div>
     </>
-  );
-}
+    );
+  }
+  
+  const features = [
+    {
+      title: "",
+      description:
+        "",
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+          <Image alt="Auth.js logo" src="/JOINTHECAMINOGIF-Squared.gif" width={100} height={100} />
+        </div>
+      ),
+    },
+  ];
