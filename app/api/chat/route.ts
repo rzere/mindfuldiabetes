@@ -1,3 +1,21 @@
+import OpenAI from "openai";
+import { OpenAIStream, StreamingTextResponse } from 'ai';
+
+const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+});
+
+const response = await openai.chat.completions.create({
+    messages: [{ role: "user", content: "Say this is a test" }],
+    model: "gpt-3.5-turbo",
+})
+  // Convert the response into a friendly text-stream.
+  const stream = OpenAIStream(response);
+
+  // Respond with the stream
+  return new StreamingTextResponse(stream);
+}
+
 // OpenAI API
 
 // import { NextApiRequest, NextApiResponse } from 'next';
@@ -42,35 +60,35 @@
 //   }
 // }
 
-import OpenAI from 'openai';
-import { OpenAIStream, StreamingTextResponse } from 'ai';
+// import OpenAI from 'openai';
+// import { OpenAIStream, StreamingTextResponse } from 'ai';
 
-// Create an OpenAI API client (that's edge friendly!)
-// but configure it to point to perplexity.ai
-const perplexity = new OpenAI({
-  apiKey: process.env.PERPLEXITY_API_KEY || '',
-  baseURL: 'https://api.perplexity.ai/',
-});
+// // Create an OpenAI API client (that's edge friendly!)
+// // but configure it to point to perplexity.ai
+// const perplexity = new OpenAI({
+//   apiKey: process.env.PERPLEXITY_API_KEY || '',
+//   baseURL: 'https://api.perplexity.ai/',
+// });
 
-// IMPORTANT! Set the runtime to edge
-export const runtime = 'edge';
+// // IMPORTANT! Set the runtime to edge
+// export const runtime = 'edge';
 
-export async function POST(req: Request) {
-  // Extract the `messages` from the body of the request
-  const { messages } = await req.json();
+// export async function POST(req: Request) {
+//   // Extract the `messages` from the body of the request
+//   const { messages } = await req.json();
 
-  // Ask Perplexity for a streaming chat completion using PPLX 70B online model
-  // @see https://blog.perplexity.ai/blog/introducing-pplx-online-llms
-  const response = await perplexity.chat.completions.create({
-    model: 'mixtral-8x7b-instruct',
-    stream: true,
-    max_tokens: 10000,
-    messages,
-  });
+//   // Ask Perplexity for a streaming chat completion using PPLX 70B online model
+//   // @see https://blog.perplexity.ai/blog/introducing-pplx-online-llms
+//   const response = await perplexity.chat.completions.create({
+//     model: 'mixtral-8x7b-instruct',
+//     stream: true,
+//     max_tokens: 10000,
+//     messages,
+//   });
 
-  // Convert the response into a friendly text-stream.
-  const stream = OpenAIStream(response);
+//   // Convert the response into a friendly text-stream.
+//   const stream = OpenAIStream(response);
 
-  // Respond with the stream
-  return new StreamingTextResponse(stream);
-}
+//   // Respond with the stream
+//   return new StreamingTextResponse(stream);
+// }
