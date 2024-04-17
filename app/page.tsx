@@ -1,7 +1,5 @@
 import Card from "@/components/home/card";
-import { DEPLOY_URL } from "@/lib/constants";
 import { Github } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 
@@ -83,7 +81,9 @@ export default function Home(){
         "#jointhecamino",
       demo: (
         <div className="flex items-center justify-center space-x-20">
+          <a href="https://www.instagram.com/jointhecamino/">
           <Image alt="Auth.js logo" src="/JOINTHECAMINOGIF-Squared.gif" width={186} height={186} />
+          </a>
         </div>
       ),
     },
