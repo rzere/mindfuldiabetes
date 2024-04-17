@@ -22,6 +22,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head><script defer src="https://analytics.us.umami.is/script.js" data-website-id="9ce4fb6b-0904-4caa-991b-c2f9f98c170a"></script></head>
       <body className={cx(sfPro.variable, inter.variable)}>
         <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
         <Suspense fallback="...">
