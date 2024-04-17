@@ -23,7 +23,7 @@ export async function POST(req: Request) {
   const response = await openai.chat.completions.create({
     model: 'gpt-4-turbo',
     stream: true,
-    messages: messages,
+    messages: [customPrompt, ...messages], // Include customPrompt at the beginning
   });
  
   // Convert the response into a friendly text-stream
