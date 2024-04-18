@@ -88,11 +88,14 @@ export default function Home(){
       ),
     },
     {
-      title: "JOIN THE CAMINO:",
+      title: "",
       description:
-        "A 100 km Run",
+        "",
       demo: (
         <div className="flex items-center justify-center space-x-20">
+          <a href="https://www.instagram.com/jointhecamino/">
+          <Image alt="Auth.js logo" src="/JOINTHECAMINOGIF-Squared.gif" width={186} height={186} />
+          </a>
           <a
             className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
             href="https://www.gofundme.com/f/join-the-camino-a-100-km-run"
