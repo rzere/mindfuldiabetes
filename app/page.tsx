@@ -87,4 +87,21 @@ export default function Home(){
         </div>
       ),
     },
+    {
+      title: "JOIN THE CAMINO:",
+      description:
+        "A 100 km Run",
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+          <a
+            className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
+            href="https://www.gofundme.com/f/join-the-camino-a-100-km-run"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Visit our GoFundMe</p>
+          </a>
+        </div>
+      ),
+    },
   ];
