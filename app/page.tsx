@@ -76,13 +76,13 @@ export default function Home(){
   
   const features = [
     {
-      title: "",
+      title: "Check out mindfuldiabetes.org",
       description:
         "Mindful Diabetes Inc is Dedicated to Finding a Cure for Type III Diabetes.",
       demo: (
         <div className="flex items-center justify-center space-x-20">
           <a href="https://mindfuldiabetes.org/">
-          <Image alt="Auth.js logo" src="/org.png" width={186} height={186} />
+          <Image alt="mindfuldiabetes.org" src="/org.png" width={200}/>
           </a>
         </div>
       ),
@@ -94,15 +94,15 @@ export default function Home(){
       demo: (
         <div className="flex items-center justify-center space-x-20">
           <a href="https://www.instagram.com/jointhecamino/">
-          <Image alt="Auth.js logo" src="/JOINTHECAMINOGIF-Squared.gif" width={186} height={186} />
+          <Image alt="Join the camino gif" src="/JOINTHECAMINOGIF-Squared.gif" width={186} height={186} />
           </a>
         </div>
       ),
     },
     {
-      title: "JOIN THE CAMINO:",
+      title: "JOIN THE CAMINO on GoFundMe",
       description:
-        "A 100 km Run",
+        "A March Towards Hope Against Alzheimer's: A 100 km Run",
       demo: (
         <div className="flex items-center justify-center space-x-20">
           <a
@@ -111,7 +111,7 @@ export default function Home(){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>Visit our GoFundMe!</p>
+            <p>Support our GoFundMe!</p>
           </a>
         </div>
       ),
