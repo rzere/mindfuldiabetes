@@ -76,7 +76,7 @@ export default function Home(){
   
   const features = [
     {
-      title: "Check out mindfuldiabetes.org",
+      title: "Visit mindfuldiabetes.org",
       description:
         "Mindful Diabetes Inc is Dedicated to Finding a Cure for Type III Diabetes.",
       demo: (
@@ -100,7 +100,7 @@ export default function Home(){
       ),
     },
     {
-      title: "JOIN THE CAMINO on GoFundMe",
+      title: "Check our GoFundMe!",
       description:
         "A March Towards Hope Against Alzheimer's: A 100 km Run",
       demo: (
