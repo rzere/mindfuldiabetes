@@ -76,6 +76,18 @@ export default function Home(){
   
   const features = [
     {
+      title: "",
+      description:
+        "Mindful Diabetes Inc is Dedicated to Finding a Cure for Type III Diabetes.",
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+          <a href="https://mindfuldiabetes.org/">
+          <Image alt="Auth.js logo" src="/org.png" width={186} height={186} />
+          </a>
+        </div>
+      ),
+    },
+    {
       title: "Join the Camino!",
       description:
         "Follow us @jointhecamino on Instagram!",
