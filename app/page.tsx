@@ -100,7 +100,7 @@ export default function Home(){
       ),
     },
     {
-      title: "Check our GoFundMe!",
+      title: "Visit GoFundMe page",
       description:
         "A March Towards Hope Against Alzheimer's: A 100 km Run",
       demo: (
