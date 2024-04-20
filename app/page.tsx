@@ -100,7 +100,7 @@ export default function Home(){
       ),
     },
     {
-      title: "Visit GoFundMe page",
+      title: "Support our GoFundMe",
       description:
         "A March Towards Hope Against Alzheimer's: A 100 km Run",
       demo: (
@@ -111,7 +111,7 @@ export default function Home(){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>Support our GoFundMe!</p>
+            <p>Visit GoFundMe!</p>
           </a>
         </div>
       ),
