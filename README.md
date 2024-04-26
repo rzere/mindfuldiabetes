@@ -1,5 +1,6 @@
-## 🤖 [Meet JEIR: Your Digital Health Assistant](https://www.mindfuldiabetes.ai)
-JEIR is not just a chatbot; it’s a sophisticated AI-powered guide equipped to address your queries about diabetes and cognitive health. This innovative tool combines the latest in AI technology with our deep commitment to health education, offering personalized advice and reliable information at your fingertips.
+# 🤖 [Meet JEIR: Your Digital Health Assistant](https://www.mindfuldiabetes.ai)
+
+[![Meet JEIR: Your Digital Health Assistant](https://raw.githubusercontent.com/rzere/mindfuldiabetes/main/public/banner.png)](https://www.mindfuldiabetes.ai) 
 
 ## 🌟 Transforming Health Communication
 With the support of the University of Miami’s College of Engineering, we’ve enhanced JEIR to provide accurate, easy-to-understand answers that help you navigate the complexities of health management. Whether you’re seeking advice on managing Type 3 Diabetes or curious about preventive strategies for Alzheimer’s, JEIR is here to assist you every step of the way.
