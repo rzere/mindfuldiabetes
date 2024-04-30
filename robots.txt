@@ -1,4 +1,4 @@
-Sitemap: https://precedent.dev/sitemap.xml
-
 User-agent: *
-Disallow: /api
+Allow: /
+
+Sitemap: https://www.mindfudiabetes.ai/sitemap.xml
