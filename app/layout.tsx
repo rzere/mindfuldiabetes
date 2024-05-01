@@ -23,7 +23,17 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head><script defer src="https://analytics.us.umami.is/script.js" data-website-id="9ce4fb6b-0904-4caa-991b-c2f9f98c170a"></script></head>
+      <head><script defer src="https://analytics.us.umami.is/script.js" data-website-id="9ce4fb6b-0904-4caa-991b-c2f9f98c170a"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11435654295">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11435654295');
+</script>
+      </head>
       <body className={cx(sfPro.variable, inter.variable)}>
         <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
         <Suspense fallback="...">
