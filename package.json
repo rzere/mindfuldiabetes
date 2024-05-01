@@ -13,7 +13,7 @@
   "dependencies": {
     "ai": "latest",
     "@next-auth/prisma-adapter": "^1.0.7",
-    "@next/third-parties/google":"latest",
+    "@next/third-parties":"latest",
     "@prisma/client": "^4.16.2",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-popover": "^1.0.7",
