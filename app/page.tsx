@@ -79,12 +79,12 @@ export default function Home(){
     {
       title: "",
       description:
-        "Watch this to Get Started!",
+        "",
       demo: (
         <div className="flex items-center justify-center">
                     <iframe
-          width="560"
-          height="315"
+          width="448"
+          height="252"
           src="https://www.youtube.com/embed/JnakbtkkF5E?si=TYFdhyNYN4AGGL1F&amp;controls=0"
           title="YouTube video player"
           frameBorder="0"
