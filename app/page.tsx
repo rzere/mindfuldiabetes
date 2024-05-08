@@ -77,14 +77,14 @@ export default function Home(){
   
   const features = [
     {
-      title: "Visit mindfuldiabetes.org",
+      title: "",
       description:
-        "Mindful Diabetes Inc is Dedicated to Finding a Cure for Type III Diabetes.",
+        "",
       demo: (
         <div className="flex items-center justify-center space-x-20">
-          <a href="https://mindfuldiabetes.org/">
-          <Image alt="mindfuldiabetes.org" src="/org.png" width={200}/>
-          </a>
+          
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JnakbtkkF5E?si=TYFdhyNYN4AGGL1F&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
         </div>
       ),
     },
