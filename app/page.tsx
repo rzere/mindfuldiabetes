@@ -81,7 +81,7 @@ export default function Home(){
       description:
         "",
       demo: (
-        <div className="flex items-center justify-center">
+        <div className="flex h-100 items-center justify-center">
                     <iframe
           width="408"
           height="382"
