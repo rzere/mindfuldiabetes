@@ -82,9 +82,18 @@ export default function Home(){
         "",
       demo: (
         <div className="flex items-center justify-center space-x-20">
+                    <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JnakbtkkF5E?si=TYFdhyNYN4AGGL1F&amp;controls=0"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen 
           
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/JnakbtkkF5E?si=TYFdhyNYN4AGGL1F&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          
+          ></iframe>
+
         </div>
       ),
     },
