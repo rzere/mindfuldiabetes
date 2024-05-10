@@ -26,7 +26,7 @@ export default function Chatbot() {
                         <div>
                             <button onClick={() => handleButtonClick("What is type 3 diabetes?")}>What is type 3 diabetes?</button>
                             <button onClick={() => handleButtonClick("What is insulin resistance in the brain?")}>What is insulin resistance in the brain?</button>
-                            <button onClick={() => handleButtonClick("What is the connection between Alzheimer's Disease & Type 2 Diabetes?")}>What is the connection between Alzheimer's Disease & Type 2 Diabetes?</button>
+                            <button onClick={() => handleButtonClick("What is the connection between Alzheimers Disease & Type 2 Diabetes?")}>What is the connection between Alzheimers Disease & Type 2 Diabetes?</button>
                             <button onClick={() => handleButtonClick("Can you make me a 21 day walking exercise routine?")}>Can you make me a 21 day walking exercise routine?</button>
                         </div>
                     )}
