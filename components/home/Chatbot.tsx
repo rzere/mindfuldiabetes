@@ -12,7 +12,7 @@ export default function Chatbot() {
     if (user == null) return null;
 
     // Function to handle button clicks
-    const handleButtonClick = (query) => {
+    const handleButtonClick = (query: string) => {
         handleInputChange({ target: { value: query } });
         handleSubmit({ preventDefault: () => {} });
         setShowButtons(false); // Hide buttons after the first use
