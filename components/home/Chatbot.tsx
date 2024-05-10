@@ -13,10 +13,17 @@ export default function Chatbot() {
 
     // Function to handle button clicks
     const handleButtonClick = (query: string) => {
-        handleInputChange({ target: { value: query } });
-        handleSubmit({ preventDefault: () => {} });
-        setShowButtons(false); // Hide buttons after the first use
-    };
+      // Create a mock event object with the same structure as a real event
+      const event = {
+          target: {
+              value: query,
+              getAttribute: () => {}, // Add other necessary properties if required by your handleInputChange
+          } as EventTarget & HTMLInputElement // Ensure the type matches what handleInputChange expects
+      };
+      handleInputChange(event as React.ChangeEvent<HTMLInputElement>); // Cast to the appropriate event type
+      handleSubmit({ preventDefault: () => {} });
+      setShowButtons(false); // Hide buttons after the first use
+  };
 
     return (
         <div className="container mx-auto px-4 py-8 flex-grow">
