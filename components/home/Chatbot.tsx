@@ -29,14 +29,6 @@ export default function Chatbot() {
         <div className="container mx-auto px-4 py-8 flex-grow">
             <main className="container mx-auto px-4 py-8 flex-grow">
                 <div className="relative mt-2 rounded-md">
-                    {showButtons && (
-                        <div>
-                            <button onClick={() => handleButtonClick("What is type 3 diabetes?")}>What is type 3 diabetes?</button>
-                            <button onClick={() => handleButtonClick("What is insulin resistance in the brain?")}>What is insulin resistance in the brain?</button>
-                            <button onClick={() => handleButtonClick("What is the connection between Alzheimers Disease & Type 2 Diabetes?")}>What is the connection between Alzheimers Disease & Type 2 Diabetes?</button>
-                            <button onClick={() => handleButtonClick("Can you make me a 21 day walking exercise routine?")}>Can you make me a 21 day walking exercise routine?</button>
-                        </div>
-                    )}
                     {messages.length > 0 && (
                         <div className="space-y-4 mb-4">
                             {messages.map((m) => (
