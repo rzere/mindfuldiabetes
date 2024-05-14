@@ -3,19 +3,20 @@
 import Image from "next/image";
 import { useChat } from 'ai/react';
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
-import { useState, useEffect, FormEvent } from 'react';
+import { useState, useEffect, useRef, FormEvent } from 'react';
 
 export default function Chatbot() {
   const { messages, input, handleInputChange, handleSubmit, setInput } = useChat();
   const { user } = useKindeBrowserClient();
   const [presetQuestion, setPresetQuestion] = useState<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     if (presetQuestion && input === presetQuestion) {
-      handleSubmit(new Event('submit') as FormEvent<HTMLFormElement>);
+      formRef.current?.submit();
       setPresetQuestion(null); // Reset the preset question
     }
-  }, [presetQuestion, input, handleSubmit]);
+  }, [presetQuestion, input]);
 
   const handlePresetQuestion = (e: FormEvent) => {
     e.preventDefault();
@@ -77,7 +78,7 @@ export default function Chatbot() {
               </button>
             </div>
           )}
-          <form onSubmit={handleSubmit} className="flex">
+          <form ref={formRef} onSubmit={handleSubmit} className="flex">
             <input
               className="container rounded-full mx-auto px-4 py-8 flex-grow flex items-center justify-center text-gray-500"
               value={input}
