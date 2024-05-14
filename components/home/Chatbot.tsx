@@ -63,7 +63,7 @@ return (
                 onClick={handlePresetQuestion} 
                 className="bg-blue-500 text-white px-4 py-2 rounded-md mx-auto block mb-4"
               >
-                Ask "What is type 3 diabetes?"
+                What is type 3 diabetes?
               </button>
             </div>
           )}
