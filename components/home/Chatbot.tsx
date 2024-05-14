@@ -3,22 +3,30 @@
 import Image from "next/image";
 import { useChat } from 'ai/react';
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
-import { FormEvent } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 
 export default function Chatbot() {
-const { messages, input, handleInputChange, handleSubmit, setInput } = useChat();
-const {
-    user
-} = useKindeBrowserClient();
-if (user == null) return null;
+  const { messages, input, handleInputChange, handleSubmit, setInput } = useChat();
+  const { user } = useKindeBrowserClient();
+  const [presetQuestion, setPresetQuestion] = useState<string | null>(null);
 
-const handlePresetQuestion = (e: FormEvent) => {
-  e.preventDefault();
-  setInput("What is type 3 diabetes?");
-  handleSubmit(e as FormEvent<HTMLFormElement>);
-};
+  if (user == null) return null;
 
-return (
+  useEffect(() => {
+    if (presetQuestion && input === presetQuestion) {
+      handleSubmit(new Event('submit') as FormEvent<HTMLFormElement>);
+      setPresetQuestion(null); // Reset the preset question
+    }
+  }, [presetQuestion, input]);
+
+  const handlePresetQuestion = (e: FormEvent) => {
+    e.preventDefault();
+    const question = "What is type 3 diabetes?";
+    setInput(question);
+    setPresetQuestion(question);
+  };
+
+  return (
     <div className="container mx-auto px-4 py-8 flex-grow">
       {/* Chat Container */}
       <main className="container mx-auto px-4 py-8 flex-grow">
