@@ -18,9 +18,8 @@ export default function Chatbot() {
     }
   }, [presetQuestion, input, handleSubmit]);
 
-  const handlePresetQuestion = (e: FormEvent) => {
+  const handlePresetQuestion = (e: FormEvent, question: string) => {
     e.preventDefault();
-    const question = "What is type 3 diabetes?";
     setInput(question);
     setPresetQuestion(question);
   };
@@ -70,12 +69,32 @@ export default function Chatbot() {
               <p className="text-center text-gray-500">
                 {/* Message when there are no messages */}
               </p>
-              <button 
-                onClick={(e) => handlePresetQuestion(e)} 
-                className="bg-blue-500 text-white px-4 py-2 rounded-md mx-auto block mb-4"
-              >
-                What is type 3 diabetes?
-              </button>
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <button 
+                  onClick={(e) => handlePresetQuestion(e, "What is type 3 diabetes?")} 
+                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                >
+                  What is type 3 diabetes?
+                </button>
+                <button 
+                  onClick={(e) => handlePresetQuestion(e, "What is insulin resistance in the brain?")} 
+                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                >
+                  What is insulin resistance in the brain?
+                </button>
+                <button 
+                  onClick={(e) => handlePresetQuestion(e, "What is the connection between Alzheimers Disease & Type 2 Diabetes?")} 
+                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                >
+                  What is the connection between Alzheimers Disease & Type 2 Diabetes?
+                </button>
+                <button 
+                  onClick={(e) => handlePresetQuestion(e, "Can you make me a 21 day walking exercise routine?")} 
+                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                >
+                  Can you make me a 21 day walking exercise routine?
+                </button>
+              </div>
             </div>
           )}
           <form ref={formRef} onSubmit={handleSubmit} className="flex">
