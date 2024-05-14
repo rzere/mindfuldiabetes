@@ -73,25 +73,25 @@ export default function Chatbot() {
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <button 
                   onClick={(e) => handlePresetQuestion(e, "What is type 3 diabetes?")} 
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                  className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
                 >
                   What is type 3 diabetes?
                 </button>
                 <button 
                   onClick={(e) => handlePresetQuestion(e, "What is insulin resistance in the brain?")} 
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                  className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
                 >
                   What is insulin resistance in the brain?
                 </button>
                 <button 
                   onClick={(e) => handlePresetQuestion(e, "What is the connection between Alzheimers Disease & Type 2 Diabetes?")} 
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                  className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
                 >
                   What is the connection between Alzheimers Disease & Type 2 Diabetes?
                 </button>
                 <button 
                   onClick={(e) => handlePresetQuestion(e, "Can you make me a 21 day walking exercise routine?")} 
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                  className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
                 >
                   Can you make me a 21 day walking exercise routine?
                 </button>
