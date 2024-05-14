@@ -5,11 +5,16 @@ import { useChat } from 'ai/react';
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Chatbot() {
-const { messages, input, handleInputChange, handleSubmit } = useChat();
+const { messages, input, handleInputChange, handleSubmit, setInput } = useChat();
 const {
     user
 } = useKindeBrowserClient();
 if (user == null) return null;
+
+const handlePresetQuestion = () => {
+  setInput("What is type 3 diabetes?");
+  handleSubmit();
+};
 
 return (
     <div className="container mx-auto px-4 py-8 flex-grow">
@@ -50,9 +55,17 @@ return (
               ))}
             </div>
           ) : (
-            <p className="text-center text-gray-500">
-              {/* Message when there are no messages */}
-            </p>
+            <div>
+              <p className="text-center text-gray-500">
+                {/* Message when there are no messages */}
+              </p>
+              <button 
+                onClick={handlePresetQuestion} 
+                className="bg-blue-500 text-white px-4 py-2 rounded-md mx-auto block mb-4"
+              >
+                Ask "What is type 3 diabetes?"
+              </button>
+            </div>
           )}
           <form onSubmit={handleSubmit} className="flex">
             <input
