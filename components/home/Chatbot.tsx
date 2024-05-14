@@ -102,7 +102,7 @@ export default function Chatbot() {
             <input
               className="container rounded-full mx-auto px-4 py-8 flex-grow flex items-center justify-center text-gray-500"
               value={input}
-              placeholder="Press enter to submit your query."
+              placeholder="Press enter to submit your query!"
               onChange={handleInputChange}
             />
           </form>
