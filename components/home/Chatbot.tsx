@@ -10,8 +10,6 @@ export default function Chatbot() {
   const { user } = useKindeBrowserClient();
   const [presetQuestion, setPresetQuestion] = useState<string | null>(null);
 
-  if (user == null) return null;
-
   useEffect(() => {
     if (presetQuestion && input === presetQuestion) {
       handleSubmit(new Event('submit') as FormEvent<HTMLFormElement>);
@@ -25,6 +23,8 @@ export default function Chatbot() {
     setInput(question);
     setPresetQuestion(question);
   };
+
+  if (user == null) return null;
 
   return (
     <div className="container mx-auto px-4 py-8 flex-grow">
