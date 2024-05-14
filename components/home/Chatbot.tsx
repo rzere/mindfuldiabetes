@@ -17,7 +17,7 @@ export default function Chatbot() {
       handleSubmit(new Event('submit') as FormEvent<HTMLFormElement>);
       setPresetQuestion(null); // Reset the preset question
     }
-  }, [presetQuestion, input]);
+  }, [presetQuestion, input, handleSubmit]);
 
   const handlePresetQuestion = (e: FormEvent) => {
     e.preventDefault();
