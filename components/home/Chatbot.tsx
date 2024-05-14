@@ -13,7 +13,7 @@ export default function Chatbot() {
 
   useEffect(() => {
     if (presetQuestion && input === presetQuestion) {
-      handleSubmit(new Event('submit') as FormEvent<HTMLFormElement>);
+      handleSubmit({ preventDefault: () => {} } as FormEvent<HTMLFormElement>);
       setPresetQuestion(null); // Reset the preset question
     }
   }, [presetQuestion, input, handleSubmit]);
