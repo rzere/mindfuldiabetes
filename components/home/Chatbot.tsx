@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useChat } from 'ai/react';
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 import { useState, useEffect, useRef, FormEvent } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export default function Chatbot() {
   const { messages, input, handleInputChange, handleSubmit, setInput } = useChat();
@@ -60,7 +61,7 @@ export default function Chatbot() {
                   <span className="font-semibold text-[#1d9bf0]">
                     {m.role === 'user' ? user?.given_name + ':' : 'JEIR [ai]:'}
                   </span>
-                  <p className="whitespace-pre-wrap">{m.content}</p>
+                  <ReactMarkdown className="whitespace-pre-wrap">{m.content}</ReactMarkdown>
                 </div>
               ))}
             </div>
