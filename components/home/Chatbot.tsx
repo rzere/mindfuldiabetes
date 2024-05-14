@@ -11,9 +11,10 @@ const {
 } = useKindeBrowserClient();
 if (user == null) return null;
 
-const handlePresetQuestion = () => {
+const handlePresetQuestion = (e) => {
+  e.preventDefault();
   setInput("What is type 3 diabetes?");
-  handleSubmit();
+  handleSubmit(e);
 };
 
 return (
@@ -60,7 +61,7 @@ return (
                 {/* Message when there are no messages */}
               </p>
               <button 
-                onClick={handlePresetQuestion} 
+                onClick={(e) => handlePresetQuestion(e)} 
                 className="bg-blue-500 text-white px-4 py-2 rounded-md mx-auto block mb-4"
               >
                 What is type 3 diabetes?
