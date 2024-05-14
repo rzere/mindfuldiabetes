@@ -15,7 +15,7 @@ if (user == null) return null;
 const handlePresetQuestion = (e: FormEvent) => {
   e.preventDefault();
   setInput("What is type 3 diabetes?");
-  handleSubmit(e);
+  handleSubmit(e as FormEvent<HTMLFormElement>);
 };
 
 return (
