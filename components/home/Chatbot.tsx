@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useChat } from 'ai/react';
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
+import { FormEvent } from 'react';
 
 export default function Chatbot() {
 const { messages, input, handleInputChange, handleSubmit, setInput } = useChat();
@@ -11,7 +12,7 @@ const {
 } = useKindeBrowserClient();
 if (user == null) return null;
 
-const handlePresetQuestion = (e) => {
+const handlePresetQuestion = (e: FormEvent) => {
   e.preventDefault();
   setInput("What is type 3 diabetes?");
   handleSubmit(e);
@@ -80,4 +81,5 @@ return (
       </main>
     </div>
   );
+}
 }
